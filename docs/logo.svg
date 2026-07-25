@@ -1,0 +1,16 @@
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background circle for contrast (optional, keeping it minimalist) -->
+    <rect width="100" height="100" rx="20" fill="#000000"/>
+
+    <!-- Top-Left Document (Target - Word-ish) -->
+    <path d="M30 25 H60 L75 40 V75 H30 Z" fill="#FFFFFF" opacity="0.9"/>
+    <path d="M60 25 V40 H75" fill="none" stroke="#000000" stroke-width="2"/>
+
+    <!-- Bottom-Right Document (Source - PDF-ish) -->
+    <path d="M40 35 H70 L85 50 V85 H40 Z" fill="#C5FC41"/>
+    <path d="M70 35 V50 H85" fill="none" stroke="#000000" stroke-width="2"/>
+
+    <!-- Swap Symbol (Subtle arrows) -->
+    <path d="M45 55 L50 60 L45 65" fill="none" stroke="#000000" stroke-width="3" stroke-linecap="round"/>
+    <path d="M70 45 L65 40 L70 35" fill="none" stroke="#000000" stroke-width="3" stroke-linecap="round"/>
+</svg>

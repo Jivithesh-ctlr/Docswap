@@ -1,0 +1,26 @@
+# Task List - DocSwap Enhancements
+
+- [x] **Part A: App Logo & Icons**
+    - [x] Create `logo.svg` in `res/drawable` (Moved to `/website` to fix build)
+    - [x] Update `ic_launcher_foreground.xml` and `ic_launcher_background.xml`
+    - [x] Update `mipmap-anydpi-v26` launchers
+- [x] **Part B: Additional Features**
+    - [x] Update `SettingsRepository.kt` with auto-delete preferences
+    - [x] Update `SettingsViewModel.kt` to handle new settings
+    - [x] Update `SettingsScreen.kt` UI for auto-delete
+    - [x] Implement "Export History" in `RecentConversionsScreen.kt`
+    - [x] Update `OnboardingScreen.kt` with the new logo
+    - [x] Trigger auto-cleanup in `MainActivity.kt`
+- [x] **Part C: Download Website**
+    - [x] Create `website/index.html`
+    - [x] Create `website/styles.css`
+    - [x] Create `website/script.js`
+- [x] **Verification**
+    - [x] Build project
+    - [x] Manual check of UI and Website
+    - [ ] Create `website/index.html`
+    - [ ] Create `website/styles.css`
+    - [ ] Create `website/script.js`
+- [ ] **Verification**
+    - [ ] Build project
+    - [ ] Manual check of UI and Website
