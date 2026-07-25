@@ -19,11 +19,24 @@ android {
         vectorDrawables {
             useSupportLibrary = true
         }
+        
+        // Remove unnecessary configurations and languages to save space
+        resConfigs("en")
     }
 
     buildTypes {
+        debug {
+            // Enable minification even in debug to keep the APK small for distribution
+            isMinifyEnabled = true
+            isShrinkResources = true
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
+        }
         release {
-            isMinifyEnabled = false
+            isMinifyEnabled = true
+            isShrinkResources = true
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
@@ -64,7 +77,7 @@ dependencies {
     implementation(libs.androidx.lifecycle.viewmodel.compose)
     implementation(libs.material)
     implementation(libs.androidx.datastore.preferences)
-    implementation(libs.androidx.compose.material.icons.extended)
+    // implementation(libs.androidx.compose.material.icons.extended)
 
     // Room
     implementation(libs.androidx.room.runtime)
@@ -73,7 +86,7 @@ dependencies {
 
     // PDF Extraction
     implementation(libs.itextg)
-    implementation(libs.mlkit.text.recognition)
+    implementation("com.google.android.gms:play-services-mlkit-text-recognition:19.0.0")
     implementation(libs.coil.compose)
 
     testImplementation(libs.junit)

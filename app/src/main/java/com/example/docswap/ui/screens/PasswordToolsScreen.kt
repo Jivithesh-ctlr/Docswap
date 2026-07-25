@@ -7,7 +7,6 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material.icons.filled.Lock
-import androidx.compose.material.icons.filled.LockOpen
 import androidx.compose.material3.*
 import androidx.compose.material3.TabRowDefaults.tabIndicatorOffset
 import androidx.compose.runtime.*
@@ -97,7 +96,7 @@ fun PasswordToolsScreen(navController: NavController, viewModel: ConversionViewM
             ) {
                 Row(verticalAlignment = Alignment.CenterVertically) {
                     Icon(
-                        if (isLockMode) Icons.Default.Lock else Icons.Default.LockOpen,
+                        Icons.Default.Lock,
                         contentDescription = null,
                         tint = LimeGreen
                     )

@@ -7,7 +7,7 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
-import androidx.compose.material.icons.filled.PictureAsPdf
+import androidx.compose.material.icons.filled.Add
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -70,7 +70,7 @@ fun PdfToImageScreen(navController: NavController, viewModel: ConversionViewMode
                     .height(100.dp)
             ) {
                 Row(verticalAlignment = Alignment.CenterVertically) {
-                    Icon(Icons.Default.PictureAsPdf, contentDescription = null, tint = LimeGreen, modifier = Modifier.size(32.dp))
+                    Icon(Icons.Default.Add, contentDescription = null, tint = LimeGreen, modifier = Modifier.size(32.dp))
                     Spacer(Modifier.width(16.dp))
                     Text(
                         selectedPdfUri?.substringAfterLast("/") ?: "Select PDF File",

@@ -9,9 +9,9 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ExitToApp
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.filled.CheckCircle
-import androidx.compose.material.icons.filled.Description
+import androidx.compose.material.icons.filled.Info
+import androidx.compose.material.icons.filled.Edit
 import com.example.docswap.ui.theme.LimeGreen
-import androidx.compose.material.icons.filled.PictureAsPdf
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
@@ -116,13 +116,13 @@ fun HomeScreen(
             ) {
                 ConversionCard(
                     title = "PDF to Word",
-                    icon = Icons.Default.Description,
+                    icon = Icons.Default.Edit,
                     modifier = Modifier.weight(1f),
                     onClick = { navController.navigate(Screen.Conversion.createRoute("pdf_to_docx")) }
                 )
                 ConversionCard(
                     title = "Word to PDF",
-                    icon = Icons.Default.PictureAsPdf,
+                    icon = Icons.Default.Info,
                     modifier = Modifier.weight(1f),
                     onClick = { navController.navigate(Screen.Conversion.createRoute("docx_to_pdf")) }
                 )

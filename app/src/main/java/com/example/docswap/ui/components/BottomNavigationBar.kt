@@ -1,10 +1,10 @@
 package com.example.docswap.ui.components
 
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.History
 import androidx.compose.material.icons.filled.Home
 import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material.icons.filled.Build
+import androidx.compose.material.icons.filled.Menu
 import androidx.compose.material3.Icon
 import androidx.compose.material3.NavigationBar
 import androidx.compose.material3.NavigationBarItem
@@ -22,7 +22,7 @@ fun BottomNavigationBar(navController: NavController) {
     val items = listOf(
         NavigationItem("Home", Screen.Home.route, Icons.Default.Home),
         NavigationItem("Tools", Screen.Tools.route, Icons.Default.Build),
-        NavigationItem("Recent", Screen.RecentConversions.route, Icons.Default.History),
+        NavigationItem("Recent", Screen.RecentConversions.route, Icons.Default.Menu),
         NavigationItem("Settings", Screen.Settings.route, Icons.Default.Settings)
     )
 

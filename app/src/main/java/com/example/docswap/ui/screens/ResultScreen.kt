@@ -7,7 +7,7 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Check
-import androidx.compose.material.icons.filled.Download
+import androidx.compose.material.icons.filled.KeyboardArrowDown
 import androidx.compose.material.icons.filled.Share
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
@@ -177,7 +177,7 @@ fun ResultScreen(
 
             ActionButton(
                 text = "Save to Downloads",
-                icon = Icons.Default.Download,
+                icon = Icons.Default.KeyboardArrowDown,
                 onClick = {
                     android.widget.Toast.makeText(context, "File saved to Downloads/DocSwap", android.widget.Toast.LENGTH_SHORT).show()
                 }

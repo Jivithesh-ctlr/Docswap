@@ -13,9 +13,9 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
-import androidx.compose.material.icons.filled.ContentCopy
-import androidx.compose.material.icons.filled.Description
-import androidx.compose.material.icons.filled.Download
+import androidx.compose.material.icons.filled.Send
+import androidx.compose.material.icons.filled.Add
+import androidx.compose.material.icons.filled.Check
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -71,7 +71,7 @@ fun OcrScreen(navController: NavController, viewModel: ConversionViewModel) {
                     .height(80.dp)
             ) {
                 Row(verticalAlignment = Alignment.CenterVertically) {
-                    Icon(Icons.Default.Description, contentDescription = null, tint = LimeGreen)
+                    Icon(Icons.Default.Add, contentDescription = null, tint = LimeGreen)
                     Spacer(Modifier.width(12.dp))
                     Text(
                         selectedFileUri?.substringAfterLast("/") ?: "Select Image or PDF",
@@ -108,13 +108,13 @@ fun OcrScreen(navController: NavController, viewModel: ConversionViewModel) {
                             clipboard.setPrimaryClip(clip)
                             Toast.makeText(context, "Copied to clipboard", Toast.LENGTH_SHORT).show()
                         }) {
-                            Icon(Icons.Default.ContentCopy, contentDescription = null, tint = LimeGreen)
+                            Icon(Icons.Default.Send, contentDescription = null, tint = LimeGreen)
                         }
                         IconButton(onClick = {
                             // Implementation for Export as .txt
                             Toast.makeText(context, "Exporting as .txt...", Toast.LENGTH_SHORT).show()
                         }) {
-                            Icon(Icons.Default.Download, contentDescription = null, tint = LimeGreen)
+                            Icon(Icons.Default.Check, contentDescription = null, tint = LimeGreen)
                         }
                     }
                     

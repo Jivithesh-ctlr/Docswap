@@ -6,9 +6,6 @@ import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.foundation.lazy.grid.items
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.automirrored.filled.CallSplit
-import androidx.compose.material.icons.automirrored.filled.MergeType
-import androidx.compose.material.icons.automirrored.filled.Notes
 import androidx.compose.material.icons.filled.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
@@ -24,16 +21,16 @@ import com.example.docswap.ui.components.ConversionCard
 @Composable
 fun ToolsScreen(navController: NavController) {
     val tools = listOf(
-        ToolItem("Merge PDF", Screen.MergePdf.route, Icons.AutoMirrored.Filled.MergeType),
-        ToolItem("Split PDF", Screen.SplitPdf.route, Icons.AutoMirrored.Filled.CallSplit),
-        ToolItem("Compress PDF", Screen.CompressPdf.route, Icons.Default.Compress),
-        ToolItem("Image to PDF", Screen.ImageToPdf.route, Icons.Default.Image),
-        ToolItem("PDF to Image", Screen.PdfToImage.route, Icons.Default.Collections),
-        ToolItem("OCR", Screen.Ocr.route, Icons.Default.TextFields),
+        ToolItem("Merge PDF", Screen.MergePdf.route, Icons.Default.Add),
+        ToolItem("Split PDF", Screen.SplitPdf.route, Icons.Default.Build),
+        ToolItem("Compress PDF", Screen.CompressPdf.route, Icons.Default.KeyboardArrowDown),
+        ToolItem("Image to PDF", Screen.ImageToPdf.route, Icons.Default.Check),
+        ToolItem("PDF to Image", Screen.PdfToImage.route, Icons.Default.Menu),
+        ToolItem("OCR", Screen.Ocr.route, Icons.Default.Search),
         ToolItem("Lock/Unlock", Screen.PasswordTools.route, Icons.Default.Lock),
-        ToolItem("E-Signature", Screen.ESignature.route, Icons.Default.Gesture),
-        ToolItem("Watermark", Screen.Watermark.route, Icons.Default.BrandingWatermark),
-        ToolItem("Annotation", Screen.Annotation.route, Icons.AutoMirrored.Filled.Notes)
+        ToolItem("E-Signature", Screen.ESignature.route, Icons.Default.Edit),
+        ToolItem("Watermark", Screen.Watermark.route, Icons.Default.Info),
+        ToolItem("Annotation", Screen.Annotation.route, Icons.Default.Info)
     )
 
     Column(
