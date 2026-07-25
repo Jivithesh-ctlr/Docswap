@@ -26,9 +26,9 @@ android {
 
     buildTypes {
         debug {
-            // Enable minification even in debug to keep the APK small for distribution
             isMinifyEnabled = true
             isShrinkResources = true
+            isDebuggable = false // Disable debuggable to shrink even more
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
@@ -60,6 +60,9 @@ android {
         resources {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
             excludes += "/META-INF/DEPENDENCIES"
+            excludes += "/META-INF/LICENSE*"
+            excludes += "/META-INF/NOTICE*"
+            excludes += "/META-INF/ASL2.0"
         }
     }
 }
